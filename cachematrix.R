@@ -3,9 +3,15 @@
 ## If the inverse is to be calculated again and the matrix has not been changed, the cached value is returned.
 ## Else, the inverse is re-calculated and returned
 
+
+
+
+#Beginning of function makeCacheMatrix
 #this function creates four functions which are set, get, setinverse, and getinverse and takes a matrix as its input
 
 makeCacheMatrix <- function(x = matrix()) {
+
+#the default value of x is specified as an empty matrix
 
         i <- NULL
 
@@ -43,9 +49,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+#end of function makeCacheMatrix
 
 
-
+#Beginning of function cacheSolve
 #this function takes a matrix x as its input and returns the inverse of this matrix
 #if the inverse has been calculated before and the matrix was not changed, the inverse is obtaned from the cache
 
@@ -73,3 +80,4 @@ cacheSolve <- function(x, ...) {
 
 }
 
+#end of cacheSolve function
